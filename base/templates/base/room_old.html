@@ -30,8 +30,8 @@
     </div>
     {% if request.user.is_authenticated %}
     <div class="comment-form">
-      <form method="POST" action="">
         {% csrf_token %}
+      <form method="POST" action="">
         <input type="text" name="body" placeholder="Write your message" />
       </form>
     </div>
